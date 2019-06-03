@@ -1,0 +1,107 @@
+body {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 17px;
+    background: #e1eec3;
+    background: -webkit-linear-gradient(to right, #f05053, #e1eec3);
+    background: linear-gradient(to right, #f05053, #e1eec3);
+}
+
+.container {
+	margin-top: 15vh;
+}
+fieldset {
+	width: 28vw;
+	margin: auto;
+	background: #A1FFCE;
+    background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);
+    background: linear-gradient(to right, #FAFFD1, #A1FFCE);
+	-webkit-box-shadow: 4px 6px 5px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 6px 5px 6px rgba(0,0,0,0.75);
+    box-shadow: 4px 6px 5px 6px rgba(0,0,0,0.75);
+	border: none;
+}
+.cont {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	
+}
+.form__element {
+	display: block;
+	margin: auto;
+	padding: 5px;
+}
+input {
+	width: 15vw;
+	height: 5vh;
+	font-size: 1.5vw;
+	background-color: #fffcdc;
+	padding-left: 5px;
+	border-radius: 7px;
+	outline: none;
+}
+
+input:focus {
+  border: 2px solid #555;
+}
+::placeholder {
+	color: #003300;
+	opacity: 0.7;
+}
+select {
+	background-color: #fffcdc;
+	height: 4vh;
+	font-size: 1vw;
+}
+.form__buttons {
+	margin: auto;
+}
+.button {
+	width: 10vw;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	outline: none;
+}
+.submit-button {
+	background: #FF5F6D;
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);
+    background: linear-gradient(to right, #FFC371, #FF5F6D);
+}
+.submit-button:hover {
+	border-color: #006699;
+	background-color: #ffffff;
+}
+.button:hover {
+	border-radius: 10px;
+	transition: all 1s;
+}
+.cancel-button {
+	background-color: #476b6b;
+	color: #ffffff
+}
+.cancel-button:hover {
+	background-color: #ffffff;
+	color: #476b6b;
+	border-color: #ffffff;
+}
+@media only screen and (max-width: 850px) {
+	fieldset {
+		width: 70vw;
+		margin-top: -60px;
+	}
+	input {
+		font-size: 3.5vw;
+		width: 45vw;
+		padding: 4px;
+		margin-bottom: 6px;
+	}
+	select {
+		height: 5vh;
+		margin-bottom: 4px;
+	}
+	.button {
+		width: 30vw;
+		min-height: 7vh;
+	}
+}
